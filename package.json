@@ -1,0 +1,27 @@
+{
+  "name": "Node-Express-Production-Ready-Boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mubashir-dev/Node-Express-Production-Ready-Boilerplate.git",
+  "author": "Mubashir Ali <mubashirmobi633@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/main.js",
+    "start:dev": "nodemon src/main.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.10.1",
+    "redis": "^4.6.8",
+    "sequelize": "^6.33.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "nodemon": "^3.0.1",
+    "sequelize-cli": "^6.6.1"
+  }
+}
