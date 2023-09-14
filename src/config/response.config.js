@@ -1,5 +1,3 @@
-const CustomError = require('./error-handler.config');
-
 const responseHandler = (data) => {
   const {
     response,
@@ -18,8 +16,6 @@ const responseHandler = (data) => {
   });
 };
 
-
-
 module.exports = {
-    responseHandler
-}
+  responseHandler,
+};
