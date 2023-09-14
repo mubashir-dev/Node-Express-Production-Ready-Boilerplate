@@ -2,7 +2,7 @@ const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const { mainRouter } = require('./routes/index');
-const { globalErrorHandler } = require('./config/response.config');
+const { globalErrorHandler } = require("./middlewares/error.middleware");
 
 process.on('unhandledRejection', (err) => {
   console.error(`Unhandled Rejection Details::${err}`);
