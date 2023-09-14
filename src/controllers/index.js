@@ -1,9 +1,8 @@
 /**
  * Exporting all controllers
  */
-const { appController } = require("./app.controller");
-
+const { appController } = require('./app.controller');
 
 module.exports = {
-    appController
+  appController,
 };

@@ -1,9 +1,8 @@
 /**
  * Exporting all controllers
  */
-const { appService } = require("./app.service");
-
+const { appService } = require('./app.service');
 
 module.exports = {
-    appService
+  appService,
 };
