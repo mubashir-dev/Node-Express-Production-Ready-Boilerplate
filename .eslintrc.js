@@ -11,7 +11,7 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
-    camelcase: ['error', { properties: 'never' }],
+    camelcase: ['error', { properties: 'always', ignoreDestructuring: false }],
     'new-cap': 'error',
   },
   overrides: [
