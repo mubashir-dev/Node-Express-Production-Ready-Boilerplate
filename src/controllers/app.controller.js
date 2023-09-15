@@ -1,5 +1,5 @@
 const { appService } = require('../services/app.service');
-const { responseHandler } = require('../config/response.config');
+const { responseHandler } = require('../utils');
 async function systemCheck(req, res, next) {
   try {
     const response = await appService.status(req, res, next);

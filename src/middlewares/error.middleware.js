@@ -1,4 +1,4 @@
-const { responseHandler } = require('../config/response.config');
+const { responseHandler } = require('../utils');
 const CustomError = require('../config/error-handler.config');
 const { logger } = require('../utils/logger.util');
 
