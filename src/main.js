@@ -2,7 +2,7 @@ const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const { mainRouter } = require('./routes/index');
-const { logger } = require('./utils/logger.util');
+const { logger, responseHandler } = require('./utils');
 const { GlobalErrorHandler, RequestLogger } = require('./middlewares');
 
 process.on('unhandledRejection', (err) => {
@@ -22,6 +22,16 @@ app.use(mainRouter);
 
 // global error handler
 app.use((err, req, res, next) => GlobalErrorHandler(err, req, res, next));
+
+// 404
+app.use('*', (req, res, next) => {
+  return responseHandler({
+    response: res,
+    code: 404,
+    message: 'Not Found',
+    isSuccess: false,
+  });
+});
 
 app.server.listen(process.env.PORT || 4000, async () => {
   logger.info(

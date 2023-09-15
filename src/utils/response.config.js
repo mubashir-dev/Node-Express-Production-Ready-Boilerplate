@@ -16,6 +16,4 @@ const responseHandler = (data) => {
   });
 };
 
-module.exports = {
-  responseHandler,
-};
+module.exports = responseHandler;
